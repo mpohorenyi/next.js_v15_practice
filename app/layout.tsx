@@ -27,4 +27,5 @@ function RootLayout({ children }: RootLayoutProps) {
     </html>
   );
 }
+
 export default RootLayout;
