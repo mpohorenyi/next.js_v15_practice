@@ -1,4 +1,4 @@
-import NavBar from '@/source/components/NavBar';
+import NavBar from '@/components/NavBar';
 
 type MainLayoutProps = Readonly<{ children: React.ReactNode }>;
 
