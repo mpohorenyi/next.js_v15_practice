@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
 
 @tailwind base;
 @tailwind components;
@@ -47,7 +47,7 @@
     @apply text-sm font-normal text-white-100/80;
   }
 
-  .pink_container {
+  .primary_container {
     @apply pattern flex min-h-[530px] w-full flex-col items-center justify-center bg-primary px-6 py-10;
   }
 
@@ -56,11 +56,11 @@
   }
 
   .heading {
-    @apply my-5 max-w-5xl bg-black px-6 py-3 text-center font-work-sans text-[36px] font-extrabold uppercase leading-[46px] text-white sm:text-[54px] sm:leading-[64px];
+    @apply my-5 max-w-5xl text-balance bg-black px-6 py-3 text-center font-work-sans text-[36px] font-extrabold uppercase leading-[46px] text-white sm:text-[54px] sm:leading-[64px];
   }
 
   .sub-heading {
-    @apply max-w-2xl break-words text-center text-[20px] font-medium text-white;
+    @apply max-w-2xl text-balance break-words text-center text-[20px] font-medium text-white;
   }
 
   .section_container {
@@ -202,8 +202,8 @@
     background-image: linear-gradient(
       to right,
       transparent 49.5%,
-      rgba(251, 232, 67, 0.2) 49.5%,
-      rgba(251, 232, 67, 0.6) 50.5%,
+    rgba(255, 152, 0, 0.2) 49.5%,
+    rgba(255, 87, 34, 0.6) 50.5%,
       transparent 50.5%
     );
     background-size: 5% 100%;
