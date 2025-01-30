@@ -8,7 +8,10 @@
     "build": "prettier --check . && next build",
     "build:local": "prettier --write . && next build",
     "dev": "next dev --turbopack",
-    "start": "next start"
+    "start": "next start",
+    "predev": "npm run typegen",
+    "prebuild": "npm run typegen",
+    "typegen": "sanity schema extract --path=./sanity/extract.json && sanity typegen generate"
   },
   "dependencies": {
     "@sanity/image-url": "^1.1.0",
