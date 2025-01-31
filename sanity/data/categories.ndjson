@@ -1,0 +1,102 @@
+{"_type": "category", "title": "Health", "description": "Health, medicine, and wellness topics", "slug": {"_type": "slug", "current": "health"}}
+{"_type": "category", "title": "Beauty", "description": "Beauty tips, cosmetics, and personal care", "slug": {"_type": "slug", "current": "beauty"}}
+{"_type": "category", "title": "Technology", "description": "Technology, gadgets, and digital innovations", "slug": {"_type": "slug", "current": "technology"}}
+{"_type": "category", "title": "Gardening", "description": "Gardening tips, plants, and agriculture", "slug": {"_type": "slug", "current": "gardening"}}
+{"_type": "category", "title": "Construction", "description": "Construction, renovation, and home improvement", "slug": {"_type": "slug", "current": "construction"}}
+{"_type": "category", "title": "Food", "description": "Cooking, recipes, and culinary arts", "slug": {"_type": "slug", "current": "food"}}
+{"_type": "category", "title": "Travel", "description": "Travel destinations and tips", "slug": {"_type": "slug", "current": "travel"}}
+{"_type": "category", "title": "Sports", "description": "Sports, fitness, and active lifestyle", "slug": {"_type": "slug", "current": "sports"}}
+{"_type": "category", "title": "Education", "description": "Learning, teaching, and academic topics", "slug": {"_type": "slug", "current": "education"}}
+{"_type": "category", "title": "Business", "description": "Business, entrepreneurship, and finance", "slug": {"_type": "slug", "current": "business"}}
+{"_type": "category", "title": "Fashion", "description": "Fashion trends and style advice", "slug": {"_type": "slug", "current": "fashion"}}
+{"_type": "category", "title": "Pets", "description": "Pet care and animal-related topics", "slug": {"_type": "slug", "current": "pets"}}
+{"_type": "category", "title": "Art", "description": "Art, creativity, and design", "slug": {"_type": "slug", "current": "art"}}
+{"_type": "category", "title": "Music", "description": "Music, concerts, and instruments", "slug": {"_type": "slug", "current": "music"}}
+{"_type": "category", "title": "Movies", "description": "Films, cinema, and entertainment", "slug": {"_type": "slug", "current": "movies"}}
+{"_type": "category", "title": "Books", "description": "Literature, reading, and writing", "slug": {"_type": "slug", "current": "books"}}
+{"_type": "category", "title": "Interior Design", "description": "Home decor and interior styling", "slug": {"_type": "slug", "current": "interior-design"}}
+{"_type": "category", "title": "Cars", "description": "Automotive topics and maintenance", "slug": {"_type": "slug", "current": "cars"}}
+{"_type": "category", "title": "Family", "description": "Family life and parenting", "slug": {"_type": "slug", "current": "family"}}
+{"_type": "category", "title": "Psychology", "description": "Mental health and psychology", "slug": {"_type": "slug", "current": "psychology"}}
+{"_type": "category", "title": "Science", "description": "Scientific discoveries and research", "slug": {"_type": "slug", "current": "science"}}
+{"_type": "category", "title": "Environment", "description": "Environmental issues and sustainability", "slug": {"_type": "slug", "current": "environment"}}
+{"_type": "category", "title": "DIY", "description": "Do-it-yourself projects and crafts", "slug": {"_type": "slug", "current": "diy"}}
+{"_type": "category", "title": "Photography", "description": "Photography tips and techniques", "slug": {"_type": "slug", "current": "photography"}}
+{"_type": "category", "title": "Finance", "description": "Personal finance and investment", "slug": {"_type": "slug", "current": "finance"}}
+{"_type": "category", "title": "Fitness", "description": "Exercise, workouts, and physical training", "slug": {"_type": "slug", "current": "fitness"}}
+{"_type": "category", "title": "Nutrition", "description": "Diet, nutrition, and healthy eating", "slug": {"_type": "slug", "current": "nutrition"}}
+{"_type": "category", "title": "Real Estate", "description": "Property, housing, and real estate market", "slug": {"_type": "slug", "current": "real-estate"}}
+{"_type": "category", "title": "Agriculture", "description": "Farming, agriculture, and cultivation", "slug": {"_type": "slug", "current": "agriculture"}}
+{"_type": "category", "title": "History", "description": "Historical events and heritage", "slug": {"_type": "slug", "current": "history"}}
+{"_type": "category", "title": "Politics", "description": "Political news and analysis", "slug": {"_type": "slug", "current": "politics"}}
+{"_type": "category", "title": "Law", "description": "Legal advice and information", "slug": {"_type": "slug", "current": "law"}}
+{"_type": "category", "title": "Religion", "description": "Religious and spiritual topics", "slug": {"_type": "slug", "current": "religion"}}
+{"_type": "category", "title": "Culture", "description": "Cultural traditions and customs", "slug": {"_type": "slug", "current": "culture"}}
+{"_type": "category", "title": "Gaming", "description": "Video games and gaming culture", "slug": {"_type": "slug", "current": "gaming"}}
+{"_type": "category", "title": "Hobbies", "description": "Various hobby activities and interests", "slug": {"_type": "slug", "current": "hobbies"}}
+{"_type": "category", "title": "Relationships", "description": "Dating, marriage, and relationships", "slug": {"_type": "slug", "current": "relationships"}}
+{"_type": "category", "title": "Career", "description": "Career development and job search", "slug": {"_type": "slug", "current": "career"}}
+{"_type": "category", "title": "Languages", "description": "Language learning and linguistics", "slug": {"_type": "slug", "current": "languages"}}
+{"_type": "category", "title": "Crafts", "description": "Handicrafts and artisanal work", "slug": {"_type": "slug", "current": "crafts"}}
+{"_type": "category", "title": "Dance", "description": "Dance styles and choreography", "slug": {"_type": "slug", "current": "dance"}}
+{"_type": "category", "title": "Theater", "description": "Theater arts and drama", "slug": {"_type": "slug", "current": "theater"}}
+{"_type": "category", "title": "Astronomy", "description": "Space exploration and astronomy", "slug": {"_type": "slug", "current": "astronomy"}}
+{"_type": "category", "title": "Weather", "description": "Weather patterns and forecasting", "slug": {"_type": "slug", "current": "weather"}}
+{"_type": "category", "title": "Outdoors", "description": "Outdoor activities and adventure", "slug": {"_type": "slug", "current": "outdoors"}}
+{"_type": "category", "title": "Fishing", "description": "Fishing techniques and equipment", "slug": {"_type": "slug", "current": "fishing"}}
+{"_type": "category", "title": "Hunting", "description": "Hunting practices and regulations", "slug": {"_type": "slug", "current": "hunting"}}
+{"_type": "category", "title": "Camping", "description": "Camping tips and outdoor survival", "slug": {"_type": "slug", "current": "camping"}}
+{"_type": "category", "title": "Motorcycles", "description": "Motorcycles and biking culture", "slug": {"_type": "slug", "current": "motorcycles"}}
+{"_type": "category", "title": "Aviation", "description": "Aviation and flying", "slug": {"_type": "slug", "current": "aviation"}}
+{"_type": "category", "title": "Sailing", "description": "Sailing and nautical topics", "slug": {"_type": "slug", "current": "sailing"}}
+{"_type": "category", "title": "Web Development", "description": "Web development and design", "slug": {"_type": "slug", "current": "web-development"}}
+{"_type": "category", "title": "Mobile Development", "description": "Mobile app development", "slug": {"_type": "slug", "current": "mobile-development"}}
+{"_type": "category", "title": "Software Engineering", "description": "Software development practices", "slug": {"_type": "slug", "current": "software-engineering"}}
+{"_type": "category", "title": "Artificial Intelligence", "description": "AI and machine learning", "slug": {"_type": "slug", "current": "artificial-intelligence"}}
+{"_type": "category", "title": "Cybersecurity", "description": "Digital security and protection", "slug": {"_type": "slug", "current": "cybersecurity"}}
+{"_type": "category", "title": "Data Science", "description": "Data analysis and visualization", "slug": {"_type": "slug", "current": "data-science"}}
+{"_type": "category", "title": "Blockchain", "description": "Blockchain technology and cryptocurrencies", "slug": {"_type": "slug", "current": "blockchain"}}
+{"_type": "category", "title": "Cloud Computing", "description": "Cloud services and infrastructure", "slug": {"_type": "slug", "current": "cloud-computing"}}
+{"_type": "category", "title": "DevOps", "description": "Development operations and automation", "slug": {"_type": "slug", "current": "devops"}}
+{"_type": "category", "title": "UX Design", "description": "User experience design", "slug": {"_type": "slug", "current": "ux-design"}}
+{"_type": "category", "title": "Archaeology", "description": "Archaeological discoveries and research", "slug": {"_type": "slug", "current": "archaeology"}}
+{"_type": "category", "title": "Architecture", "description": "Architectural design and theory", "slug": {"_type": "slug", "current": "architecture"}}
+{"_type": "category", "title": "Biotechnology", "description": "Biotechnology and genetic engineering", "slug": {"_type": "slug", "current": "biotechnology"}}
+{"_type": "category", "title": "Chemistry", "description": "Chemical science and experiments", "slug": {"_type": "slug", "current": "chemistry"}}
+{"_type": "category", "title": "Economics", "description": "Economic theory and practice", "slug": {"_type": "slug", "current": "economics"}}
+{"_type": "category", "title": "Engineering", "description": "Engineering disciplines and projects", "slug": {"_type": "slug", "current": "engineering"}}
+{"_type": "category", "title": "Geology", "description": "Earth sciences and geology", "slug": {"_type": "slug", "current": "geology"}}
+{"_type": "category", "title": "Mathematics", "description": "Mathematical concepts and problems", "slug": {"_type": "slug", "current": "mathematics"}}
+{"_type": "category", "title": "Medicine", "description": "Medical science and healthcare", "slug": {"_type": "slug", "current": "medicine"}}
+{"_type": "category", "title": "Physics", "description": "Physical sciences and theories", "slug": {"_type": "slug", "current": "physics"}}
+{"_type": "category", "title": "Robotics", "description": "Robotics and automation", "slug": {"_type": "slug", "current": "robotics"}}
+{"_type": "category", "title": "Space", "description": "Space exploration and research", "slug": {"_type": "slug", "current": "space"}}
+{"_type": "category", "title": "Veterinary", "description": "Veterinary medicine and animal care", "slug": {"_type": "slug", "current": "veterinary"}}
+{"_type": "category", "title": "Zoology", "description": "Animal science and behavior", "slug": {"_type": "slug", "current": "zoology"}}
+{"_type": "category", "title": "Marketing", "description": "Marketing strategies and techniques", "slug": {"_type": "slug", "current": "marketing"}}
+{"_type": "category", "title": "Advertising", "description": "Advertising and promotion", "slug": {"_type": "slug", "current": "advertising"}}
+{"_type": "category", "title": "Public Relations", "description": "PR and communications", "slug": {"_type": "slug", "current": "public-relations"}}
+{"_type": "category", "title": "Journalism", "description": "News and journalism", "slug": {"_type": "slug", "current": "journalism"}}
+{"_type": "category", "title": "Social Media", "description": "Social media management", "slug": {"_type": "slug", "current": "social-media"}}
+{"_type": "category", "title": "E-commerce", "description": "Online retail and e-commerce", "slug": {"_type": "slug", "current": "e-commerce"}}
+{"_type": "category", "title": "Cryptocurrency", "description": "Digital currencies and trading", "slug": {"_type": "slug", "current": "cryptocurrency"}}
+{"_type": "category", "title": "Investing", "description": "Investment strategies and markets", "slug": {"_type": "slug", "current": "investing"}}
+{"_type": "category", "title": "Startups", "description": "Startup companies and entrepreneurship", "slug": {"_type": "slug", "current": "startups"}}
+{"_type": "category", "title": "Leadership", "description": "Leadership skills and management", "slug": {"_type": "slug", "current": "leadership"}}
+{"_type": "category", "title": "Human Resources", "description": "HR management and development", "slug": {"_type": "slug", "current": "human-resources"}}
+{"_type": "category", "title": "Project Management", "description": "Project planning and execution", "slug": {"_type": "slug", "current": "project-management"}}
+{"_type": "category", "title": "Quality Management", "description": "Quality control and assurance", "slug": {"_type": "slug", "current": "quality-management"}}
+{"_type": "category", "title": "Risk Management", "description": "Risk assessment and mitigation", "slug": {"_type": "slug", "current": "risk-management"}}
+{"_type": "category", "title": "Supply Chain", "description": "Supply chain and logistics", "slug": {"_type": "slug", "current": "supply-chain"}}
+{"_type": "category", "title": "Telecommunications", "description": "Telecommunications technology", "slug": {"_type": "slug", "current": "telecommunications"}}
+{"_type": "category", "title": "3D Printing", "description": "3D printing technology", "slug": {"_type": "slug", "current": "3d-printing"}}
+{"_type": "category", "title": "Virtual Reality", "description": "VR technology and applications", "slug": {"_type": "slug", "current": "virtual-reality"}}
+{"_type": "category", "title": "Augmented Reality", "description": "AR technology and applications", "slug": {"_type": "slug", "current": "augmented-reality"}}
+{"_type": "category", "title": "Internet of Things", "description": "IoT devices and connectivity", "slug": {"_type": "slug", "current": "internet-of-things"}}
+{"_type": "category", "title": "Quantum Computing", "description": "Quantum computing technology", "slug": {"_type": "slug", "current": "quantum-computing"}}
+{"_type": "category", "title": "Nanotechnology", "description": "Nanotechnology and materials science", "slug": {"_type": "slug", "current": "nanotechnology"}}
+{"_type": "category", "title": "Renewable Energy", "description": "Renewable energy sources", "slug": {"_type": "slug", "current": "renewable-energy"}}
+{"_type": "category", "title": "Space Technology", "description": "Space technology and innovation", "slug": {"_type": "slug", "current": "space-technology"}}
+{"_type": "category", "title": "Genetics", "description": "Genetic research and applications", "slug": {"_type": "slug", "current": "genetics"}}
+{"_type": "category", "title": "Neuroscience", "description": "Brain science and neurology", "slug": {"_type": "slug", "current": "neuroscience"}}
+{"_type": "category", "title": "Microbiology", "description": "Microorganisms and their study", "slug": {"_type": "slug", "current": "microbiology"}}
