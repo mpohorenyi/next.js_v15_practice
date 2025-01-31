@@ -2,6 +2,7 @@ import { Lightbulb } from 'lucide-react';
 import { defineField, defineType } from 'sanity';
 
 import {
+  IDEA_CONTENT_MAX_LENGTH,
   IDEA_CONTENT_MIN_LENGTH,
   IDEA_SLUG_MAX_LENGTH,
   IDEA_SUMMARY_MAX_LENGTH,
@@ -94,12 +95,19 @@ const idea = defineType({
       title: 'Content',
       type: 'markdown',
       description: 'The main content of the idea in Markdown format',
-      validation: rule =>
+      validation: rule => [
+        rule.required().error('Content is required'),
         rule
           .min(IDEA_CONTENT_MIN_LENGTH)
           .error(
             `Content should be at least ${IDEA_CONTENT_MIN_LENGTH} characters`,
           ),
+        rule
+          .max(IDEA_CONTENT_MAX_LENGTH)
+          .error(
+            `Content is too long. Max ${IDEA_CONTENT_MAX_LENGTH} characters at most`,
+          ),
+      ],
     }),
   ],
   preview: {
