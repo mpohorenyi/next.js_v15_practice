@@ -141,9 +141,25 @@ export type Idea = {
   };
   views?: number;
   summary?: string;
-  category?: string;
+  category?: {
+    _ref: string;
+    _type: 'reference';
+    _weak?: boolean;
+    [internalGroqTypeReferenceTo]?: 'category';
+  };
   image?: string;
   content?: string;
+};
+
+export type Category = {
+  _id: string;
+  _type: 'category';
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  title?: string;
+  slug?: Slug;
+  description?: string;
 };
 
 export type Slug = {
@@ -180,6 +196,7 @@ export type AllSanitySchemaTypes =
   | Geopoint
   | SanityAssetSourceData
   | Idea
+  | Category
   | Slug
   | Author
   | Markdown;
