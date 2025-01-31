@@ -1,5 +1,6 @@
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
+
 import { FlatCompat } from '@eslint/eslintrc';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -21,6 +22,10 @@ const eslintConfig = [
     rules: {
       'tailwindcss/classnames-order': 'off',
       '@typescript-eslint/consistent-type-definitions': 'warn',
+      '@typescript-eslint/restrict-template-expressions': [
+        'warn',
+        { allowNumber: true },
+      ],
     },
     parser: '@typescript-eslint/parser',
     overrides: [
@@ -43,6 +48,10 @@ const eslintConfig = [
         rules: {
           'tailwindcss/classnames-order': 'off',
           '@typescript-eslint/consistent-type-definitions': 'warn',
+          '@typescript-eslint/restrict-template-expressions': [
+            'warn',
+            { allowNumber: true },
+          ],
         },
       },
     ],
