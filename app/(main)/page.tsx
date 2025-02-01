@@ -1,4 +1,8 @@
+import IdeaList from '@/components/IdeaList';
 import SearchForm from '@/components/SearchForm';
+
+import { client } from '@/sanity/lib/client';
+import { IDEAS_QUERY } from '@/sanity/lib/queries';
 
 interface HomePageProps {
   searchParams: Promise<{ query?: string }>;
@@ -6,6 +10,8 @@ interface HomePageProps {
 
 async function HomePage({ searchParams }: HomePageProps) {
   const query = (await searchParams).query;
+
+  const ideas = await client.fetch(IDEAS_QUERY);
 
   return (
     <>
@@ -22,6 +28,14 @@ async function HomePage({ searchParams }: HomePageProps) {
         </p>
 
         <SearchForm query={query} />
+      </section>
+
+      <section className="section_container">
+        <p className="text-30-semibold">
+          {query ? `Search results for "${query}"` : 'All Ideas'}
+        </p>
+
+        <IdeaList ideas={ideas} />
       </section>
     </>
   );
