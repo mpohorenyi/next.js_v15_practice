@@ -21,11 +21,12 @@ const eslintConfig = [
     plugins: ['@typescript-eslint', 'tailwindcss'],
     rules: {
       'tailwindcss/classnames-order': 'off',
-      '@typescript-eslint/consistent-type-definitions': 'warn',
+      '@typescript-eslint/consistent-type-definitions': 'off',
       '@typescript-eslint/restrict-template-expressions': [
         'warn',
         { allowNumber: true },
       ],
+      '@typescript-eslint/array-type': 'off',
     },
     parser: '@typescript-eslint/parser',
     overrides: [
@@ -47,11 +48,12 @@ const eslintConfig = [
         ],
         rules: {
           'tailwindcss/classnames-order': 'off',
-          '@typescript-eslint/consistent-type-definitions': 'warn',
+          '@typescript-eslint/consistent-type-definitions': 'off',
           '@typescript-eslint/restrict-template-expressions': [
             'warn',
             { allowNumber: true },
           ],
+          '@typescript-eslint/array-type': 'off',
         },
       },
     ],
