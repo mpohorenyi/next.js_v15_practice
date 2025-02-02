@@ -201,7 +201,7 @@ export type AllSanitySchemaTypes =
   | Author
   | Markdown;
 export declare const internalGroqTypeReferenceTo: unique symbol;
-// Source: ./sanity/lib/queries.ts
+// Source: ./sanity/queries/ideas.ts
 // Variable: IDEAS_QUERY
 // Query: *[_type == "idea" && defined(slug.current)] | order(_createdAt desc) {    'id': _id,    title,    'slug': slug.current,    author -> {      'id': _id,      name,      image,      bio    },    views,    summary,    'category': category -> { title }.title,    image,    'createdAt': _createdAt,  }
 export type IDEAS_QUERYResult = Array<{

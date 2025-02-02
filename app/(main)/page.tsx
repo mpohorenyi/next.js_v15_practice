@@ -2,7 +2,7 @@ import IdeaList from '@/components/IdeaList';
 import SearchForm from '@/components/SearchForm';
 
 import { client } from '@/sanity/lib/client';
-import { IDEAS_QUERY } from '@/sanity/lib/queries';
+import { IDEAS_QUERY } from '@/sanity/queries/ideas';
 
 interface HomePageProps {
   searchParams: Promise<{ query?: string }>;
