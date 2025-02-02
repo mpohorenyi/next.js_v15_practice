@@ -1,7 +1,7 @@
 import IdeaList from '@/components/IdeaList';
 import SearchForm from '@/components/SearchForm';
 
-import { client } from '@/sanity/lib/client';
+import { sanityFetch } from '@/sanity/lib/live';
 import { IDEAS_QUERY } from '@/sanity/queries/ideas';
 
 interface HomePageProps {
@@ -11,7 +11,7 @@ interface HomePageProps {
 async function HomePage({ searchParams }: HomePageProps) {
   const query = (await searchParams).query;
 
-  const ideas = await client.fetch(IDEAS_QUERY);
+  const { data: ideas } = await sanityFetch({ query: IDEAS_QUERY });
 
   return (
     <>
