@@ -41,7 +41,7 @@ const IdeaCard = ({ idea }: IdeaCardProps) => {
             alt={`${author?.name} avatar`}
             width={48}
             height={48}
-            className="rounded-full"
+            className="avatar"
           />
         </Link>
       </div>

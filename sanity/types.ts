@@ -203,7 +203,7 @@ export type AllSanitySchemaTypes =
 export declare const internalGroqTypeReferenceTo: unique symbol;
 // Source: ./sanity/queries/ideas.ts
 // Variable: IDEAS_QUERY
-// Query: *[_type == "idea" && defined(slug.current)] | order(_createdAt desc) {    'id': _id,    title,    'slug': slug.current,    author -> {      'id': _id,      name,      image,      bio    },    views,    summary,    'category': category -> { title }.title,    image,    'createdAt': _createdAt,  }
+// Query: *[_type == "idea" && defined(slug.current)]  | order(_createdAt desc) {    'id': _id,    title,    'slug': slug.current,    author -> {      'id': _id,      name,      image,      bio    },    views,    summary,    'category': category -> { title }.title,    image,    'createdAt': _createdAt,  }[select(    defined($search) => title match ('*' + $search + '*')      || category match ('*' + $search + '*')      || author.name match ('*' + $search + '*'),    true  )]
 export type IDEAS_QUERYResult = Array<{
   id: string;
   title: string | null;
@@ -225,6 +225,6 @@ export type IDEAS_QUERYResult = Array<{
 import '@sanity/client';
 declare module '@sanity/client' {
   interface SanityQueries {
-    "*[_type == \"idea\" && defined(slug.current)] | order(_createdAt desc) {\n    'id': _id,\n    title,\n    'slug': slug.current,\n    author -> {\n      'id': _id,\n      name,\n      image,\n      bio\n    },\n    views,\n    summary,\n    'category': category -> { title }.title,\n    image,\n    'createdAt': _createdAt,\n  }": IDEAS_QUERYResult;
+    "*[_type == \"idea\" && defined(slug.current)]\n  | order(_createdAt desc) {\n    'id': _id,\n    title,\n    'slug': slug.current,\n    author -> {\n      'id': _id,\n      name,\n      image,\n      bio\n    },\n    views,\n    summary,\n    'category': category -> { title }.title,\n    image,\n    'createdAt': _createdAt,\n  }[select(\n    defined($search) => title match ('*' + $search + '*')\n      || category match ('*' + $search + '*')\n      || author.name match ('*' + $search + '*'),\n    true\n  )]": IDEAS_QUERYResult;
   }
 }

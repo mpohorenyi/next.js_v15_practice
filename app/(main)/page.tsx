@@ -11,7 +11,10 @@ interface HomePageProps {
 async function HomePage({ searchParams }: HomePageProps) {
   const query = (await searchParams).query;
 
-  const { data: ideas } = await sanityFetch({ query: IDEAS_QUERY });
+  const { data: ideas } = await sanityFetch({
+    query: IDEAS_QUERY,
+    params: { search: query ?? null },
+  });
 
   return (
     <>
