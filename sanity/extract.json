@@ -926,10 +926,10 @@
           "type": "string"
         }
       },
-      "id": {
+      "googleId": {
         "type": "objectAttribute",
         "value": {
-          "type": "number"
+          "type": "string"
         },
         "optional": true
       },

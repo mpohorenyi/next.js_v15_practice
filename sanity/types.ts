@@ -174,7 +174,7 @@ export type Author = {
   _createdAt: string;
   _updatedAt: string;
   _rev: string;
-  id?: number;
+  googleId?: string;
   name?: string;
   username?: string;
   email?: string;
@@ -201,6 +201,19 @@ export type AllSanitySchemaTypes =
   | Author
   | Markdown;
 export declare const internalGroqTypeReferenceTo: unique symbol;
+// Source: ./sanity/queries/authors.ts
+// Variable: AUTHOR_BY_GOOGLE_ID_QUERY
+// Query: *[_type == "author" && googleId == $googleId][0] {    _id,    googleId,    name,    username,    email,    image,    bio  }
+export type AUTHOR_BY_GOOGLE_ID_QUERYResult = {
+  _id: string;
+  googleId: string | null;
+  name: string | null;
+  username: string | null;
+  email: string | null;
+  image: string | null;
+  bio: string | null;
+} | null;
+
 // Source: ./sanity/queries/ideas.ts
 // Variable: IDEAS_QUERY
 // Query: *[_type == "idea" && defined(slug.current)]  | order(_createdAt desc) {    'id': _id,    title,    'slug': slug.current,    author -> {      'id': _id,      name,      image,      bio    },    views,    summary,    'category': category -> { title }.title,    image,    'createdAt': _createdAt,  }[select(    defined($search) => title match ('*' + $search + '*')      || category match ('*' + $search + '*')      || author.name match ('*' + $search + '*'),    true  )]
@@ -220,11 +233,40 @@ export type IDEAS_QUERYResult = Array<{
   image: string | null;
   createdAt: string;
 }>;
+// Variable: IDEA_BY_SLUG_QUERY
+// Query: *[_type == "idea" && slug.current == $slug][0] {    'id': _id,    title,    'slug': slug.current,    author -> {      'id': _id,      name,      image,      username,      bio    },    views,    summary,    'category': category -> { title }.title,    image,    'createdAt': _createdAt,    content}
+export type IDEA_BY_SLUG_QUERYResult = {
+  id: string;
+  title: string | null;
+  slug: string | null;
+  author: {
+    id: string;
+    name: string | null;
+    image: string | null;
+    username: string | null;
+    bio: string | null;
+  } | null;
+  views: number | null;
+  summary: string | null;
+  category: string | null;
+  image: string | null;
+  createdAt: string;
+  content: string | null;
+} | null;
+// Variable: IDEA_VIEWS_BY_SLUG_QUERY
+// Query: *[_type == "idea" && slug.current == $slug][0] {    'id': _id,    views}
+export type IDEA_VIEWS_BY_SLUG_QUERYResult = {
+  id: string;
+  views: number | null;
+} | null;
 
 // Query TypeMap
 import '@sanity/client';
 declare module '@sanity/client' {
   interface SanityQueries {
+    '*[_type == "author" && googleId == $googleId][0] {\n    _id,\n    googleId,\n    name,\n    username,\n    email,\n    image,\n    bio\n  }': AUTHOR_BY_GOOGLE_ID_QUERYResult;
     "*[_type == \"idea\" && defined(slug.current)]\n  | order(_createdAt desc) {\n    'id': _id,\n    title,\n    'slug': slug.current,\n    author -> {\n      'id': _id,\n      name,\n      image,\n      bio\n    },\n    views,\n    summary,\n    'category': category -> { title }.title,\n    image,\n    'createdAt': _createdAt,\n  }[select(\n    defined($search) => title match ('*' + $search + '*')\n      || category match ('*' + $search + '*')\n      || author.name match ('*' + $search + '*'),\n    true\n  )]": IDEAS_QUERYResult;
+    "*[_type == \"idea\" && slug.current == $slug][0] {\n    'id': _id,\n    title,\n    'slug': slug.current,\n    author -> {\n      'id': _id,\n      name,\n      image,\n      username,\n      bio\n    },\n    views,\n    summary,\n    'category': category -> { title }.title,\n    image,\n    'createdAt': _createdAt,\n    content\n}": IDEA_BY_SLUG_QUERYResult;
+    '*[_type == "idea" && slug.current == $slug][0] {\n    \'id\': _id,\n    views\n}': IDEA_VIEWS_BY_SLUG_QUERYResult;
   }
 }

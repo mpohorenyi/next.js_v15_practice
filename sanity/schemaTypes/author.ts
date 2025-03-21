@@ -18,10 +18,10 @@ const author = defineType({
   icon: UserIcon,
   fields: [
     defineField({
-      name: 'id',
-      title: 'ID',
-      type: 'number',
-      validation: rule => rule.required().error('Id is required'),
+      name: 'googleId',
+      title: 'Google ID',
+      type: 'string',
+      validation: rule => rule.required().error('Google ID is required'),
     }),
     defineField({
       name: 'name',
