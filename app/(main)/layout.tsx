@@ -1,5 +1,4 @@
 import NavBar from '@/components/NavBar';
-import { SanityLive } from '@/sanity/lib/live';
 
 type MainLayoutProps = Readonly<{ children: React.ReactNode }>;
 
@@ -8,7 +7,6 @@ function MainLayout({ children }: MainLayoutProps) {
     <>
       <NavBar />
       <main>{children}</main>
-      <SanityLive />
     </>
   );
 }

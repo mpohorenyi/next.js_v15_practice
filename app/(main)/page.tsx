@@ -1,7 +1,7 @@
 import IdeaList from '@/components/IdeaList';
 import SearchForm from '@/components/SearchForm';
 
-import { sanityFetch } from '@/sanity/lib/live';
+import { sanityFetch, SanityLive } from '@/sanity/lib/live';
 import { IDEAS_QUERY } from '@/sanity/queries/ideas';
 
 interface HomePageProps {
@@ -40,6 +40,8 @@ async function HomePage({ searchParams }: HomePageProps) {
 
         <IdeaList ideas={ideas} />
       </section>
+
+      <SanityLive />
     </>
   );
 }

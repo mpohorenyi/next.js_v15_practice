@@ -23,4 +23,30 @@ const IDEAS_QUERY = defineQuery(`*[_type == "idea" && defined(slug.current)]
     true
   )]`);
 
-export { IDEAS_QUERY };
+const IDEA_BY_SLUG_QUERY =
+  defineQuery(`*[_type == "idea" && slug.current == $slug][0] {
+    'id': _id,
+    title,
+    'slug': slug.current,
+    author -> {
+      'id': _id,
+      name,
+      image,
+      username,
+      bio
+    },
+    views,
+    summary,
+    'category': category -> { title }.title,
+    image,
+    'createdAt': _createdAt,
+    content
+}`);
+
+const IDEA_VIEWS_BY_SLUG_QUERY =
+  defineQuery(`*[_type == "idea" && slug.current == $slug][0] {
+    'id': _id,
+    views
+}`);
+
+export { IDEA_BY_SLUG_QUERY, IDEA_VIEWS_BY_SLUG_QUERY, IDEAS_QUERY };
